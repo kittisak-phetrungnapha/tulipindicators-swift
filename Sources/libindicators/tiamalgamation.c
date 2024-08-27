@@ -3843,13 +3843,6 @@ int ti_macd(int size, TI_REAL const *const *inputs, TI_REAL const *options, TI_R
     TI_REAL long_per = 2 / ((TI_REAL)long_period + 1);
     TI_REAL signal_per = 2 / ((TI_REAL)signal_period + 1);
 
-    if (short_period == 12 && long_period == 26)
-    {
-
-        short_per = 0.15;
-        long_per = 0.075;
-    }
-
     TI_REAL short_ema = input[0];
     TI_REAL long_ema = input[0];
     TI_REAL signal_ema = 0;
